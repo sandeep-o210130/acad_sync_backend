@@ -8,7 +8,7 @@ const app = express();
 
 //configure middlewares
 const allowedOrigins = [
-	process.env.FRONTEND_URL?.trim() || 'http://localhost:5173',
+	process.env.FRONTEND_URL?.trim() ||"https://acad-sync-frontend-b4v7.vercel.app"|| 'http://localhost:5173',
 ];
 
 app.use(
